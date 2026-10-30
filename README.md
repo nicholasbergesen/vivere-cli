@@ -102,6 +102,13 @@ Releases are cross-compiled with the version stamped in:
 go build -trimpath -ldflags="-s -w -X main.version=$VERSION" -o vivere ./cmd/vivere
 ```
 
+## Guides
+
+The full reference for `vivere run` (flags, exit codes, what it sends) is
+[vivere.dev/docs/cli](https://vivere.dev/docs/cli). Setting it up under a scheduler:
+[cron](https://vivere.dev/docs/cron), [systemd timers](https://vivere.dev/docs/systemd) and
+[Windows Task Scheduler](https://vivere.dev/docs/windows).
+
 ## Why this repository exists
 
 The Vivere server binary has a `vivere run` subcommand that does the same job, and it
